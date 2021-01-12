@@ -30,4 +30,12 @@ public class HomeController {
 		return "home";
 	}
 	
+	//강사작성
+	@RequestMapping(value = "/boardlist.do", method = RequestMethod.GET)
+	public String boardlist(Locale locale, Model model) {
+		logger.info("Welcome home! The client locale is {}.", locale);
+
+		return "boardlist";
+	}
+	
 }
